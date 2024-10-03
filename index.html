@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count-down timer</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Count-down Timer</h1>
+        <div class="form">
+            <form >
+                <div class="set">
+                <label >DATE</label>
+                <input  id ="date" type="date" name="date" placeholder="" >
+                <span  class="reqdate">required</span>
+                </div> 
+                <div class="set">  
+                <label>Time</label>
+                
+                <input id="time" type="time" min="0" name="hour" placeholder=""  >
+                <span  class="reqtime">required</span>
+                </div> 
+                <button  class="btn"  type="submit" >Start</button>
+            </form>   
+        </div>
+        <div class="main disable">
+            <div class="timer">
+            <div id="days" class="watch">
+                <p>00</p>
+                <span>Days</span>
+            </div>
+            <div id="hours" class="watch">
+                <p>00</p>
+                <span>hours</span>
+            </div>
+            <div id="min" class="watch">
+                <p>00</p>
+                <span>minutes</span>
+            </div>
+            <div id="sec" class="watch">
+                <p>00</p>
+                <span>seconds</span>
+            </div>
+            </div>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+ <script src="index.js"></script>   
+</body>
+</html>
